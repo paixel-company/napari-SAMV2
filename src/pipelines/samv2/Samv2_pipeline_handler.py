@@ -58,7 +58,7 @@ class SamV2_pipeline(QWidget):
 
         # Save each slice as a separate image
         for i in range(volume.shape[0]):
-            slice_path = os.path.join(self.source_frame_dir, f"{i:04d}.jpeg")
+            slice_path = os.path.join(self.source_frame_dir, f"{i:04d}.tif")
 
             if os.path.exists(slice_path):
                 continue
