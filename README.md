@@ -9,20 +9,6 @@ Plugin primarily made for segmenting 3d volumetric data or 3d time series data.
 
 ## Installation
 
-Pre-requisite of samv2 installation needed: --- Our current plugin supports only sam v 2.0  not 2.1.   So, we need to pull the SAM repo around september 15 ,2024 (last update of SAM2.0)
-
-    git clone https://github.com/facebookresearch/segment-anything-2.git
-    cd segment-anything-2
-    git rev-list -n 1 --before="2024-09-15" HEAD
-    git checkout <commit_hash>
-    pip install -e .
-
-You can install `napari-SAMV2` via [pip]:
-
-    pip install napari-SAMV2
-
-******
-
 The plugin and installation tested with python 3.10 in conda environment with pytorch-cuda=12.1
 
 conda environment with example :
