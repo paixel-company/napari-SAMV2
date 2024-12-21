@@ -32,13 +32,11 @@ conda environment with example :
     conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
     python -m pip install "napari[all]"
 
-    git clone https://github.com/facebookresearch/segment-anything-2.git
-    cd segment-anything-2
-    git rev-list -n 1 --before="2024-09-15" HEAD
-    
-    git checkout <commit_hash>
+    git clone https://github.com/paixel-company/sam2/
+    cd sam2
+    git checkout feature/add-tiff-files
     pip install -e .
-    pip install napari-SAMV2    
+    pip install git+https://github.com/paixel-company/napari-SAMV2    
 
 *****
 
